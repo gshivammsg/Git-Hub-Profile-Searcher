@@ -1,0 +1,10 @@
+
+<input type="text" placeholder="enter git username" [(ngModel)]="username" (keyup.enter)="findProfile()" name="">
+Name of User is:{{profile.name}}<br>
+Login of User is:{{profile.login}}<br>
+The image of the user is :<br>
+<img src="{{profile.avatar_url}}"><br>
+Followers are: {{profile.followers}}<br>
+Followings are: {{profile.following}}<br>
+Public Reository of user are {{profile.public_repos}}<br>
+Profile on github is:<a href="{{profile.html_url}}" class="btn  btn-success">View</a>
